@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>CryptoClick - Mining Dragonsss</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CryptoClick - Mining Dragonsss</h1>
+    <div id="clicking-tab" class="tab-content active game">
+      <p id="dragonsss">Dragonsss: 0</p>
+      <div class="energy-bar-container">
+        <div id="energyBar" class="energy-bar"></div>
+        <div id="energyText" class="energy-text">8000/8000</div>
+      </div>
+      <div class="rage-bar-container">
+        <div id="rageBar" class="rage-bar"></div>
+        <div id="rageText" class="rage-text">0/0</div>
+      </div>
+      <button id="mineButton" class="mine-button">
+        <img src="dragonsss.png" alt="Mine Dragonsss">
+        <div id="sparksContainer" class="sparks-container"></div>
+      </button>
+      <p id="dragonsssPerClick">Dragonsss per Click: 1</p>
+      <p id="dragonsssPerSecond">Dragonsss per Second: 0</p>
+    </div>
+    <div id="upgrades-tab" class="tab-content upgrades">
+      <h2>Upgrades</h2>
+      <p class="upgrade-cost" id="upgradeClickCost">Upgrade Click Cost: 10 Dragonsss</p>
+      <button id="upgradeClick">Upgrade Click (+1 Dragonsss)</button>
+      <p class="upgrade-cost" id="buyMinerCost">Buy Miner Cost: 50 Dragonsss</p>
+      <button id="buyMiner">Buy Miner (Auto +1 Dragonsss/sec)</button>
+    </div>
+    <div id="events-tab" class="tab-content events">
+      <h2>Events</h2>
+      <p>Weekly Competition: Mine the most Dragonsss to win!</p>
+      <p>Daily Quest: Mine 1000 Dragonsss in a day to get bonus rewards!</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('clicking-tab')">Clicking</button>
+      <button class="tab-button" onclick="showTab('upgrades-tab')">Upgrades</button>
+      <button class="tab-button" onclick="showTab('events-tab')">Events</button>
+    </div>
+    <div id="notification" class="notification"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
